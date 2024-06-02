@@ -28,12 +28,6 @@ namespace DateTimeCheckerApp
             string monthStr = txtMonth.Text;
             string yearStr = txtYear.Text;
 
-            if (string.IsNullOrEmpty(dayStr) || string.IsNullOrEmpty(monthStr) || string.IsNullOrEmpty(yearStr))
-            {
-                string msg = "Please enter all the date fields.";
-                MessageBox.Show(msg, "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
 
             bool isValidDate = _dateTimeChecker.CheckDate(dayStr, monthStr, yearStr);
 
