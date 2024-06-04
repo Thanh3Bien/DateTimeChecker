@@ -68,8 +68,9 @@ namespace DateTimeCheckerApp
                 {
                     return false; // Invalid month
                 }
-                else if (day < 1 || day > daysInMonth)
+                else if (day < 1 || day != daysInMonth)
                 {
+                    MessageBox.Show($"{day}/{month}/{year} is not correct date time!", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
                     return false; // Invalid day
                 }
                 else
