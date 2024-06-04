@@ -38,24 +38,6 @@ namespace DateTimeCheckerApp
             txtDay.Text = string.Empty;
             txtMonth.Text = string.Empty;
             txtYear.Text = string.Empty;
-        }
-
-        private void CheckDayInMonth_Click(object sender, RoutedEventArgs e)
-        {
-            DayInMonth dayInMonths = new DayInMonth();
-            txtDay.Text = string.Empty;
-            string monthStr = txtMonth.Text;
-            string yearStr = txtYear.Text;
-            if (string.IsNullOrEmpty(monthStr) || string.IsNullOrEmpty(yearStr))
-            {
-                string msg = "Please enter all the date fields.";
-                MessageBox.Show(msg, "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-            int DayInMonth = dayInMonths.CheckDayInMonth(monthStr, yearStr);
-            MessageBox.Show($"{DayInMonth}", "Message", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-
+        }      
     }
 }
