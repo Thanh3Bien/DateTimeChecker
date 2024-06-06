@@ -30,7 +30,7 @@ namespace DateTimeCheckerApp
             {
                 if (year % 400 == 0)
                 {
-                    result = 28;
+                    result = 29;
                 }
                 else if (year % 100 == 0)
                 {

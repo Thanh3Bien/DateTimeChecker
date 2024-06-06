@@ -32,6 +32,7 @@ namespace DateTimeCheckerApp
             bool isValidDate = _dateTimeChecker.CheckDate(dayStr, monthStr, yearStr);
 
         }
+        
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
