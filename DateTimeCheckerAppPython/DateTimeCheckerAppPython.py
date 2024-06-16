@@ -16,6 +16,11 @@ class MainWindow(tk.Tk):
         # # # Create the widgets
         # self.image_label = tk.label(self, image=self.image).pack()
         # self.image_label.place(x=0, y=10, width=392, height=100)
+        
+
+        self.title_label = tk.Label(self, text="Date Time Checker", font=("Arial", 16))
+        self.title_label.place(x=100, y=60, width=200, height=30)
+
 
         self.day_label = tk.Label(self, text="Day")
         self.day_label.place(x=50, y=130, width=50, height=27)
