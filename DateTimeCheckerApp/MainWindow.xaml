@@ -15,6 +15,7 @@
         <Label Content="Month" HorizontalAlignment="Left" Margin="50,161,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
         <Label Content="Year" HorizontalAlignment="Left" Margin="50,193,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
         <Button Content="Clear" HorizontalAlignment="Left" Margin="60,244,0,0" VerticalAlignment="Top" Click="btnClear_Click"/>
+        <Button Content="Check2" HorizontalAlignment="Center" Margin="0,244,100,0" VerticalAlignment="Top" Click="CheckDayInMonth_Click" />
         <Button Content="Check" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Click="CheckDate_Click"/>
     </Grid>
 </Window>
